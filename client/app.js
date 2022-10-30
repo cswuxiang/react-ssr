@@ -6,7 +6,6 @@ class App extends React.Component {
     return <Router ssrData={this.props.ssrData} ssrPath={this.props.ssrPath} />;
   }
 }
-
 hydrate(
   <App ssrData={window.ssrData} ssrPath={window.ssrPath} />,
   document.getElementById("root")
